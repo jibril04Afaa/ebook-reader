@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    colors: {
+      gold: "#D4AF37",
+    },
     extend: {},
     screens: {
       "sm": "320px",

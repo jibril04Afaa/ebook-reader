@@ -4,6 +4,9 @@ import { FiBookOpen } from "react-icons/fi";
 import { CiPlay1 } from "react-icons/ci";
 
 import TheStranger from "../img/the-stranger-img.jpg"
+import FallOfUsher from "../img/fall-of-the-house-of-usher.jpg"
+import Meditations from "../img/meditations.jpg"
+import JaneEyre from "../img/jane-eyre.jpg"
 
 const Home = () => {
   return (
@@ -12,8 +15,8 @@ const Home = () => {
         <div className="h-screen">
             <div className='flex justify-between p-5'>
                 <div className="">
-                    <h1 className="text-6xl">The Stranger</h1>
-                    <p className="text-2xl">By Albert Camus</p>
+                    <h1 className="text-6xl text-gold">The Stranger</h1>
+                    <p className="text-2xl">By <span className="text-gold">Albert Camus</span></p>
                     {/* Other book Info */}
 
                     {/* Rating and Reading/Listening Time Container */}
@@ -37,7 +40,7 @@ const Home = () => {
                         <div>
                             <div className="mt-5 mb-5">
                                 <p className="text-xl">
-                                    The Stranger dolor sit amet consectetur adipisicing elit.
+                                    <span className="text-gold">The Stranger</span> dolor sit amet consectetur adipisicing elit.
                                     <br />
                                     Itaque fugit laboriosam error cupiditate. Omnis in, error
                                     <br /> 
@@ -51,12 +54,12 @@ const Home = () => {
                         {/* Buttons */}
                         <div className="flex gap-5">
                             <div className="flex items-center border-2 p-2 rounded-lg">
-                                <FiBookOpen className="text-xl"/>
-                                <button className="text-xl">READ NOW</button>
+                                <FiBookOpen className="text-xl font-bold"/>
+                                <button className="text-xl font-bold text-gold bg">READ NOW</button>
                             </div>
-                            <div className="flex items-center border-2 p-2 rounded-lg">
-                                <CiPlay1 className="text-xl"/>
-                                <button className="text-xl">LISTEN NOW</button>
+                            <div className="flex items-center border-2 p-2 rounded-lg bg-gold">
+                                <CiPlay1 className="text-xl font-bold"/>
+                                <button className="text-xl font-bold">LISTEN NOW</button>
                             </div>
                         </div>
 
@@ -74,13 +77,13 @@ const Home = () => {
 
             {/* More Similar Books */}
             <div className="p-5">
-                <div>
-                    <p className="text-2xl">MORE SIMILAR BOOKS</p>
+                <p className="text-2xl mb-5">MORE SIMILAR BOOKS</p>
+                <div className="">
                     {/* Book Image */}
-                    <div>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+                    <div className="flex justify-between">
+                        <img src={FallOfUsher} alt="" width="200px" height="100px"/>
+                        <img src={Meditations} alt="" width="200px" height="100px"/>
+                        <img src={JaneEyre} alt="" width="200px" height="100px"/>
                     </div>
                 </div>
             </div>

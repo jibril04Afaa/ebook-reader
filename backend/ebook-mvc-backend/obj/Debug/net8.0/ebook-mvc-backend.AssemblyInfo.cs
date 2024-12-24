@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ebook-mvc-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f4654eb99a1a2f79dd70b59c40ceb5a242dfdbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37f38d6fc590d0903ca6c81a0286acb3a355d7e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ebook-mvc-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ebook-mvc-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

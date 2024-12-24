@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom"
 import Home from "./components/Home"
 import Settings from "./components/Settings"
 import User from "./components/User"
@@ -22,8 +22,8 @@ function App() {
       </div> */}
 
       <nav className="flex flex-col gap-8 border-r-2 w-24 p-6">
-        <Link to="/search"><CiSearch className="text-3xl"/></Link>
         <Link to="/"><IoHomeOutline className="text-3xl"/></Link>
+        <Link to="/search"><CiSearch className="text-3xl"/></Link>
         <Link to="/add-new-book"><CiCirclePlus className="text-3xl"/></Link>
         <Link to="/user"><CiUser className="text-3xl"/></Link>
         <Link to="/settings"><CiSettings className="text-3xl"/></Link>
@@ -31,20 +31,16 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/settings" element={<Settings/>}/>
-        <Route path="/user" element={<User/>}/>
+        <Route path="/search" element={<SearchBar/>}/>
         <Route path="/add-new-book" element={<AddNewBook/>}/>
-        <Route path="/search-bar" element={<SearchBar/>}/>
+        <Route path="/user" element={<User/>}/>
+        <Route path="/settings" element={<Settings/>}/>
+        <Route path="*" element={<h1>404 Not Found</h1>}/>
       </Routes>
 
-        {/* Main Pages */}
-        <div>
-          <Home/>
-        </div>
       </Router>
     </div>
     
-
   )
 }
 

@@ -2,7 +2,7 @@ import { CiSearch } from "react-icons/ci";
 
 const SearchBar = () => {
   return (
-    <div className="border-2 p-4">
+    <div className="p-4 w-screen">
       
       {/* Inner Container */}
       <div className="">
@@ -13,9 +13,9 @@ const SearchBar = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="flex items-center border-2 rounded-xl">
+        <div className="flex justify-between items-center border-2 rounded-xl">
           <CiSearch className="text-3xl"/>
-          <input type="text" className="h-full"/>
+          <input type="text" className="h-full" onChange={(e) => e.target.value}/>
           <button className="rounded-lg pl-4 pr-4 pt-2 pb-2 bg-gold font-bold">Search</button>
         </div>
 

@@ -7,12 +7,13 @@ import TheStranger from "../img/the-stranger-img.jpg"
 import FallOfUsher from "../img/fall-of-the-house-of-usher.jpg"
 import Meditations from "../img/meditations.jpg"
 import JaneEyre from "../img/jane-eyre.jpg"
+import EssaysAphorisms from "../img/essays-and-aphorisms.jpg"
 
 const Home = () => {
   return (
     <>  
         {/* Major Container */}
-        <div className="h-screen">
+        <div className="h-screen w-screen">
             <div className='flex justify-between p-5'>
                 <div className="">
                     <h1 className="text-6xl text-gold">The Stranger</h1>
@@ -84,13 +85,11 @@ const Home = () => {
                         <img src={FallOfUsher} alt="" width="200px" height="100px"/>
                         <img src={Meditations} alt="" width="200px" height="100px"/>
                         <img src={JaneEyre} alt="" width="200px" height="100px"/>
+                        <img src={EssaysAphorisms} alt="" width="200px" height="100px"/>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
 
     </>
 
